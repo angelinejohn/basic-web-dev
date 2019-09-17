@@ -1,0 +1,26 @@
+use jadrn021;
+
+drop table if exists runner;
+
+CREATE TABLE runner (	id int AUTO_INCREMENT PRIMARY KEY, 
+						fname VARCHAR(50) NOT NULL,
+						mname VARCHAR(50), 
+						lname VARCHAR(50) NOT NULL,
+						addr1 VARCHAR(100) NOT NULL,
+						addr2 VARCHAR(100) NOT NULL,
+						city VARCHAR(30) NOT NULL,
+						state VARCHAR(2) NOT NULL,
+						zip VARCHAR(5) NOT NULL,
+						email VARCHAR(50) NOT NULL,
+						dob date NOT NULL,
+						month date NOT NULL,
+						year date NOT NULL,
+						area char(3),
+						prefix char(3),
+						phone char(4),
+						gender VARCHAR(10),
+						explevel VARCHAR(30) NOT NULL,
+						category VARCHAR(30) NOT NULL,
+						imgpath VARCHAR(1000) NOT NULL,
+						medcondition VARCHAR(2000)
+					);

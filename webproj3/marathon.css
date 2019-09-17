@@ -1,0 +1,381 @@
+﻿/* 
+    John, Angeline Flora
+    Jadrn021
+    Project #3
+    Fall 2017
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0 0 35px;
+    letter-spacing: 1px;
+    /*text-transform: uppercase;*/
+}
+
+#pad {
+    padding-top: 10%;
+    text-align: center;
+    background-image: url(background.jpg);
+    background-size: auto;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 25px;
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0 0 35px;
+    }
+}
+
+a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #42DCA3;
+}
+
+    a:focus, a:hover {
+        text-decoration: none;
+        color: #1d9b6c;
+    }
+
+#mainNav {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: black;
+}
+
+    #mainNav .navbar-toggler {
+        font-size: 14px;
+        padding: 11px;
+        color: white;
+        border: 1px solid white;
+    }
+
+    #mainNav .navbar-brand {
+        font-weight: 700;
+    }
+
+    #mainNav a {
+        color: white;
+    }
+
+    #mainNav .navbar-nav .nav-item {
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out;
+    }
+
+        #mainNav .navbar-nav .nav-item:hover {
+            color: white;
+            outline: none;
+            background-color: transparent;
+        }
+
+        #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+            outline: none;
+            background-color: transparent;
+        }
+
+@media (min-width: 992px) {
+    #mainNav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        letter-spacing: 1px;
+        border-bottom: none;
+        background: transparent;
+    }
+
+        #mainNav.navbar-shrink {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            background: black;
+        }
+
+        #mainNav .nav-link.active {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+            #mainNav .nav-link.active:hover {
+                color: white;
+            }
+}
+
+.head {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 200px 0;
+    text-align: center;
+    color: white;
+    background: url("background.jpg") no-repeat bottom center scroll;
+    background-color: black;
+    background-size: cover;
+}
+
+    .head .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+        .head .intro-body .brand-heading {
+            font-size: 50px;
+        }
+
+        .head .intro-body .intro-text {
+            font-size: 18px;
+        }
+
+@media (min-width: 768px) {
+    .head {
+        height: 100%;
+        padding: 0;
+    }
+
+        .head .intro-body .brand-heading {
+            font-size: 100px;
+        }
+
+        .head .intro-body .intro-text {
+            font-size: 22px;
+        }
+}
+
+.btn-circle {
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    margin-top: 15px;
+    line-height: 38px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    background: transparent;
+}
+
+    .btn-circle:focus, .btn-circle:hover {
+        color: white;
+        outline: none;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+
+
+.content-section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+
+body {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-body {
+    width:100%;
+    height:auto;
+    background: url("form-background.jpg") repeat bottom center scroll;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.sign_up_form {
+    position:relative;
+    margin-top:100px;
+
+}
+
+#input_buttons {
+    position: inherit;
+    margin-left: 500px;
+}
+
+.error {
+    border: 3px solid red;
+    background-color: #fee;
+    font-size: x-large;
+    display: block;
+}
+
+#message_line {
+    height: 50px;
+    color: red;
+    font-family: sans-serif;
+    font-style: bold;
+    padding-left: 250px;
+    padding-top: 5px;
+    font-size: x-large;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: inline;
+    text-align: center;
+    }     
+
+
+.form-style{
+    max-width: 800px;
+    padding-top: 100px;
+    background: #E0E0E0;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+}
+.form-style fieldset{
+    border: none;
+}
+.form-style legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form-style label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style textarea,
+.form-style select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    background-color: #9C9C9C;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+   
+}
+.form-style input[type="text"]:focus,
+.form-style input[type="date"]:focus,
+.form-style input[type="datetime"]:focus,
+.form-style input[type="email"]:focus,
+.form-style input[type="number"]:focus,
+.form-style input[type="search"]:focus,
+.form-style input[type="time"]:focus,
+.form-style input[type="url"]:focus,
+.form-style textarea:focus,
+.form-style select:focus{
+    background: #F0F0F0;
+}
+.form-style select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+.form-style .number {
+    background: #0D4F8B;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-style input[type="submit"],
+.form-style input[type="reset"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #0D4F8B;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #A3A3A3;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+.form-style input[type="submit"]:hover,
+.form-style input[type="reset"]:hover
+{
+    background: #A3A3A3;
+}
+
+.sameline {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0D4F8B;
+}
+
+a:hover {
+    color: #0D4F8B;
+}
+
+footer {
+    text-align: center;
+}
+
+.links {
+    padding-left: 50px;
+    padding-top: 20px;
+}   
+
