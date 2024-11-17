@@ -1,6 +1,6 @@
 <?php
 /*
-    John, Angeline Flora
+    ajohn
     jadrn021
     Project #3
     Fall 2017

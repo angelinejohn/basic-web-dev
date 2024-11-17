@@ -2,7 +2,7 @@
 <html>
 <head>
 	   <!--
-        John, Angeline Flora
+        ajohn
         Jadrn021
         Project #3
         Fall 2017

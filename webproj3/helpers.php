@@ -1,7 +1,7 @@
 <?php
 
 /*
-    John, Angeline Flora
+    ajohn
     jadrn021
     Project #3
     Fall 2017
@@ -31,7 +31,7 @@ print <<<ENDBLOCK
 <html>
 <head>
     <!--
-        John, Angeline Flora
+        ajohn
         Jadrn021
         Project #3
         Fall 2017
